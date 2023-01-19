@@ -19,7 +19,6 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "axios-mock-adapter": "^1.21.2",
     "vitest": "^0.27.2"
   }
 }
