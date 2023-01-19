@@ -1,4 +1,5 @@
 import axios from 'axios';
+import getPosts from 'src/pages/api/posts';
 
 function Post({ post }) {
   return (
@@ -25,8 +26,7 @@ export async function getStaticProps(context) {
 }
 
 export async function getStaticPaths() {
-  const response = await axios.get('http://localhost:8080/posts');
-  const posts = response.data;
+  const posts = await getPosts();
 
   return {
     paths: posts.map((post) => ({ params: { id: post._id } })),

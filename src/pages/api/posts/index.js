@@ -6,6 +6,7 @@ async function getPosts(req, res) {
     return response.data
   } catch (error) {
     console.error(error);
+    return []
   }
 }
 
