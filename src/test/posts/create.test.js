@@ -13,7 +13,7 @@ import createPost from 'src/pages/api/posts/create';
 
 vi.mock('axios');
 
-describe('getPosts()', () => {
+describe('createPosts()', () => {
   beforeEach(() => {
     axios.post.mockReset();
   });
