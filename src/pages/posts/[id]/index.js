@@ -1,4 +1,5 @@
 import axios from 'axios';
+import PostDelete from 'src/components/posts/delete-button';
 import getPosts from 'src/pages/api/posts';
 
 function Post({ post }) {
@@ -7,6 +8,7 @@ function Post({ post }) {
       <h3>{post.id}</h3>
       <h1>{post.title}</h1>
       <p>{post.content}</p>
+      <PostDelete post={post} />
     </div>
   );
 }

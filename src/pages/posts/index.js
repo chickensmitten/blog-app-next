@@ -1,4 +1,4 @@
-import PostItem from 'src/components/posts/post-item';
+import PostItem from 'src/components/posts/show-details';
 import getPosts from '../api/posts';
 
 function Posts({ posts }) {

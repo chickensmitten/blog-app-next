@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import PostForm from "src/components/posts/post-form";
+import PostForm from "src/components/posts/form";
 
 function NewPost() {
   return (

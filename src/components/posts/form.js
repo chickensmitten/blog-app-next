@@ -2,9 +2,6 @@ import { useRouter } from "next/router";
 import { Fragment, useState } from "react";
 import createPost from "src/pages/api/posts/create";
 
-
-
-
 function PostForm() {
   const [enteredTitle, setTitle] = useState("")
   const [enteredContent, setContent] = useState("")
